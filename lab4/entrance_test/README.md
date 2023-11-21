@@ -15,7 +15,7 @@ Opracowanie do wejściówki
 
 
 ### 5. Detekcja obiektów.
-
+Za pomocą konwolucyjnych sieci neuronowych jesteśmy w stanie z wysoką wydajnością rozponznawać obiekty. W porównaniu do MLP, gdzie tworząc warstwy dla macierzy pojedynczych pikseli, sieć połączeń potrafi być naprawdę duża, dodatkowo sieci MLP nie radzą sobie ze zmianą położenia obiektu.
 
 ### 6. Wybór bounding-boxów, kandydatury, confidence levels.
 
