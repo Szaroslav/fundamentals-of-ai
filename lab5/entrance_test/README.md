@@ -2,19 +2,19 @@
 Opracowanie do wejściówki
 
 ### 1. Działanie rekurencyjnych sieci neuronowych.
-
+W rekurencyjnej sieci neuronowej istnieje przynajmniej jedna warstwia neuronów, które oprócz połączeń z kolejną warstwą są połączone same ze sobą. Taka budowa sieci sprawia, że dane które pojawiają się na wyjściu wcześniej wpływają na wyniki sieci dla danych które pojawiły się później. Takie sieci przydają się do analizy danych sekwencyjnych.
 
 ### 2. Działanie mechanizmu atencji.
-
+Dane są kodowane a następnie wprowadzane do fragmentu sieci neuronowej z mechanizmem atencji. W tym fragmencie sieci danym wejściowym przyporządkowane są wagi (określane na podstawie korelacji między tymi danymi), które określają które dane są najważniejsze. Następnie otrzymane wartości są wyprowadzane z mechanizmu atencji I wpływają na aktywacje kolejnych neuronów.
 
 ### 3. Statyczne osadzenia słów.
-
+Sposób reprezentacja słowa w sieci neuronowj, zazwyczaj za pomocą wektora. Słowa o zbliżonym znaczeniu znajdują się bliżej siebie w przestrzeni.
 
 ### 4. Model językowy, w tym znakowy model językowy.
-
+Model który określa prawdopodobieństwo wystąpienia określonego słowa w zdaniu. W przypadku znakowego modelu językowego – określonego znaku. Znakowy model językowy ma tą przewagę że łatwiej radzi sobie z dowolnymi słowami, I interpunkcją, jednak zazwyczaj wymaga większych modeli.
 
 ### 5. Pre-trening w kontekście modeli językowych.
-
+Najlepiej do tworzenia uniwersalnych pre treningowanych sieci nadają się znakowe modele językowe które są bardzo eleastyczne, wymagają niewielkiego fine-tuneingu do poprawnego przewidywania wyników w danym zakresie.
 
 ### 6. Wsteczna propagacja błędu w czasie.
 **Propagacja wsteczna** (ang. _backpropagation_ lub _backward propagation of errors_) – podstawowy algorytm uczenia nadzorowanego wielowarstwowych, jednokierunkowych sieci neuronowych. Oparty jest na błędzie warstwy wyjściowej, który jest przesyłany wstecz i wykorzystywany do zmiany wartości wag w poprzednich warstwach.
