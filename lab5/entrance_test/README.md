@@ -17,7 +17,7 @@ Model który określa prawdopodobieństwo wystąpienia określonego słowa w zda
 Najlepiej do tworzenia uniwersalnych pre treningowanych sieci nadają się znakowe modele językowe które są bardzo eleastyczne, wymagają niewielkiego fine-tuneingu do poprawnego przewidywania wyników w danym zakresie.
 
 ### 6. Wsteczna propagacja błędu w czasie.
-**Propagacja wsteczna** (ang. _backpropagation_ lub _backward propagation of errors_) – podstawowy algorytm uczenia nadzorowanego wielowarstwowych, jednokierunkowych sieci neuronowych. Oparty jest na błędzie warstwy wyjściowej, który jest przesyłany wstecz i wykorzystywany do zmiany wartości wag w poprzednich warstwach.
+**Propagacja wsteczna w czasie** (ang. _backpropagation through time_, **BPTT**) – algorytm uczenia rekurencyjnych sieci neuronowych. Jest to efektywny algorytm, który uwzględnia zależności międzi aktualnym a poprzednimi wejściami warstw. Polega na rozwijaniu zależności rekurencyjnych w czasie, a następnie wykorzystuje standardowy algorytm wstecznej propagacji.
 
 ### 7. Długa pamięć krótkotrwałą (LSTM).
 **Długa pamięć krótkotrwała (LSTM)** to rodzaj rekurencyjnej sieci neuronowej (RNN), która służy do modelowania zależności czasowych w danych. W szczególności może "pamiętać" przeszłe zdarzenia lub zależności z wcześniej obserwowanych czasów. LSTM to rodzaj sieci zaprojektowanej specjalnie, aby pomóc komputerowi zapamiętać informacje na dłużej niż jest to zwykle możliwe w przypadku rekurencyjnej sieci neuronowej. Model długiej pamięci krótkotrwałej działa przy użyciu "komórek", które przechowują informacje przez długi czas; po wykryciu nowego wejścia tworzone są nowe komórki, które łączą się z istniejącymi komórkami.
