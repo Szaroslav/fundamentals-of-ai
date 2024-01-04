@@ -7773,7 +7773,7 @@ metoda razi sobie najlepiej w grze w kółko i krzyżyk.</p>
 ---------------
 |   ||   ||   |
 ---------------
-| O ||   ||   |
+|   ||   || O |
 ---------------
 |   ||   ||   |
 ---------------
@@ -7781,58 +7781,74 @@ metoda razi sobie najlepiej w grze w kółko i krzyżyk.</p>
 ---------------
 |   ||   ||   |
 ---------------
-| O ||   || X |
----------------
-|   ||   ||   |
----------------
-
----------------
-| O ||   ||   |
----------------
-| O ||   || X |
----------------
-|   ||   ||   |
----------------
-
----------------
-| O ||   ||   |
----------------
-| O ||   || X |
+|   ||   || O |
 ---------------
 |   || X ||   |
 ---------------
 
 ---------------
-| O ||   ||   |
+|   ||   ||   |
 ---------------
-| O ||   || X |
----------------
-|   || X || O |
----------------
-
+|   ||   || O |
 ---------------
 | O || X ||   |
 ---------------
-| O ||   || X |
----------------
-|   || X || O |
----------------
 
+---------------
+|   ||   || X |
+---------------
+|   ||   || O |
 ---------------
 | O || X ||   |
 ---------------
-| O || O || X |
+
+---------------
+|   ||   || X |
+---------------
+|   ||   || O |
+---------------
+| O || X || O |
+---------------
+
+---------------
+|   ||   || X |
 ---------------
 |   || X || O |
 ---------------
-player 1 wins
+| O || X || O |
+---------------
+
+---------------
+|   ||   || X |
+---------------
+| O || X || O |
+---------------
+| O || X || O |
+---------------
+
+---------------
+| X ||   || X |
+---------------
+| O || X || O |
+---------------
+| O || X || O |
+---------------
+
+---------------
+| X || O || X |
+---------------
+| O || X || O |
+---------------
+| O || X || O |
+---------------
+draw
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'win'</pre>
+<pre>'draw'</pre>
 </div>
 </div>
 </div>
@@ -7986,7 +8002,23 @@ player 1 wins
 ---------------
 
 ---------------
+|   ||   || O |
+---------------
 |   ||   ||   |
+---------------
+|   ||   ||   |
+---------------
+
+---------------
+| X ||   || O |
+---------------
+|   ||   ||   |
+---------------
+|   ||   ||   |
+---------------
+
+---------------
+| X ||   || O |
 ---------------
 |   ||   ||   |
 ---------------
@@ -7994,35 +8026,19 @@ player 1 wins
 ---------------
 
 ---------------
-|   ||   ||   |
+| X || X || O |
 ---------------
 |   ||   ||   |
 ---------------
-| O || X ||   |
+| O ||   ||   |
 ---------------
 
 ---------------
-| O ||   ||   |
+| X || X || O |
 ---------------
-|   ||   ||   |
----------------
-| O || X ||   |
----------------
-
+|   || O ||   |
 ---------------
 | O ||   ||   |
----------------
-|   ||   || X |
----------------
-| O || X ||   |
----------------
-
----------------
-| O ||   ||   |
----------------
-| O ||   || X |
----------------
-| O || X ||   |
 ---------------
 player 1 wins
 </pre>
@@ -8099,7 +8115,6 @@ player 1 wins
             <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">player_winning_move</span>
         <span class="k">elif</span> <span class="n">enemy_winning_move</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">enemy_winning_move</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">y</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">get_possible_moves</span><span class="p">(</span><span class="n">board</span><span class="p">))</span>
         <span class="n">board</span><span class="p">[</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">player</span>
@@ -8140,76 +8155,59 @@ player 1 wins
 ---------------
 
 ---------------
-|   ||   ||   |
+| O ||   ||   |
 ---------------
 |   ||   ||   |
 ---------------
-|   ||   || O |
+|   ||   ||   |
 ---------------
 
+---------------
+| O ||   ||   |
+---------------
+| X ||   ||   |
 ---------------
 |   ||   ||   |
 ---------------
-|   ||   || X |
----------------
-|   ||   || O |
----------------
 
+---------------
+| O ||   ||   |
+---------------
+| X ||   ||   |
 ---------------
 |   || O ||   |
 ---------------
-|   ||   || X |
----------------
-|   ||   || O |
----------------
 
+---------------
+| O ||   || X |
+---------------
+| X ||   ||   |
 ---------------
 |   || O ||   |
 ---------------
-|   ||   || X |
----------------
-| X ||   || O |
----------------
 
----------------
-|   || O ||   |
 ---------------
 | O ||   || X |
 ---------------
-| X ||   || O |
+| X ||   ||   |
+---------------
+|   || O || O |
 ---------------
 
----------------
-|   || O ||   |
 ---------------
 | O ||   || X |
 ---------------
-| X || X || O |
+| X || X ||   |
+---------------
+|   || O || O |
 ---------------
 
----------------
-| O || O ||   |
 ---------------
 | O ||   || X |
 ---------------
-| X || X || O |
+| X || X ||   |
 ---------------
-0 2
-
----------------
-| O || O || X |
----------------
-| O ||   || X |
----------------
-| X || X || O |
----------------
-
----------------
-| O || O || X |
----------------
-| O || O || X |
----------------
-| X || X || O |
+| O || O || O |
 ---------------
 player 1 wins
 </pre>
@@ -8421,55 +8419,53 @@ i na $+\infty$ dla gracza którego spłata jest minimalizowana,</li>
 ---------------
 | O ||   ||   |
 ---------------
-|   ||   || X |
----------------
 |   ||   ||   |
+---------------
+|   || X ||   |
 ---------------
 
 ---------------
 | O ||   || O |
 ---------------
-|   ||   || X |
+|   ||   ||   |
+---------------
+|   || X ||   |
+---------------
+
+---------------
+| O || X || O |
 ---------------
 |   ||   ||   |
 ---------------
-0 1
-
----------------
-| O || X || O |
----------------
-|   ||   || X |
----------------
-|   ||   ||   |
+|   || X ||   |
 ---------------
 
 ---------------
 | O || X || O |
 ---------------
-|   || O || X |
+|   || O ||   |
 ---------------
-|   ||   ||   |
----------------
-2 0
-
----------------
-| O || X || O |
----------------
-|   || O || X |
----------------
-| X ||   ||   |
+|   || X ||   |
 ---------------
 
 ---------------
 | O || X || O |
 ---------------
-|   || O || X |
+|   || O ||   |
 ---------------
-| X ||   || O |
+| X || X ||   |
+---------------
+
+---------------
+| O || X || O |
+---------------
+|   || O ||   |
+---------------
+| X || X || O |
 ---------------
 player 1 wins
-CPU times: user 1.27 s, sys: 5.94 ms, total: 1.27 s
-Wall time: 1.31 s
+CPU times: user 1.61 s, sys: 1.86 ms, total: 1.61 s
+Wall time: 1.62 s
 </pre>
 </div>
 </div>
@@ -8759,8 +8755,8 @@ Wall time: 1.31 s
 | O || X || O |
 ---------------
 draw
-CPU times: user 240 ms, sys: 4.02 ms, total: 244 ms
-Wall time: 296 ms
+CPU times: user 292 ms, sys: 2.03 ms, total: 294 ms
+Wall time: 297 ms
 </pre>
 </div>
 </div>
@@ -8964,8 +8960,8 @@ Wall time: 296 ms
 | X || X || O |
 ---------------
 draw
-CPU times: user 1.4 s, sys: 6.72 ms, total: 1.41 s
-Wall time: 1.52 s
+CPU times: user 1.79 s, sys: 2.19 ms, total: 1.79 s
+Wall time: 1.79 s
 </pre>
 </div>
 </div>
@@ -9066,179 +9062,6 @@ Wall time: 1.52 s
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1 1
-0 2
-1 0
-2 0
-2 0
-1 1
-0 2
-1 1
-2 2
-2 0
-2 2
-0 2
-2 0
-0 0
-0 2
-2 0
-2 2
-2 0
-2 1
-0 2
-2 2
-1 2
-2 0
-1 1
-1 2
-0 0
-0 2
-0 1
-1 0
-2 0
-0 0
-1 1
-0 0
-2 0
-0 2
-1 1
-0 0
-0 1
-1 1
-2 1
-2 2
-0 0
-1 0
-1 2
-1 0
-1 1
-0 0
-1 1
-1 0
-0 1
-1 0
-0 1
-1 0
-2 2
-1 0
-2 2
-2 1
-0 2
-2 0
-0 1
-2 0
-1 2
-2 1
-0 2
-1 0
-1 0
-0 1
-2 0
-2 1
-0 0
-1 0
-0 1
-2 0
-2 1
-0 2
-1 0
-2 0
-0 1
-0 0
-1 2
-1 2
-2 1
-2 1
-0 2
-1 0
-2 0
-0 0
-2 0
-2 2
-2 2
-0 0
-2 2
-0 1
-0 2
-1 1
-0 2
-1 1
-0 2
-0 0
-0 0
-0 1
-0 0
-1 1
-0 1
-2 0
-0 1
-2 0
-2 0
-1 2
-2 0
-1 2
-0 2
-1 0
-0 2
-2 1
-0 1
-1 0
-0 1
-2 0
-0 1
-1 0
-0 2
-2 1
-2 0
-1 2
-2 0
-1 2
-0 2
-2 1
-2 0
-1 2
-0 2
-1 0
-0 1
-2 0
-2 0
-1 2
-2 0
-1 2
-0 1
-1 0
-2 0
-1 2
-0 2
-1 0
-2 2
-0 1
-1 2
-2 2
-0 2
-0 2
-1 0
-2 2
-0 2
-2 2
-1 0
-2 1
-2 0
-0 1
-2 0
-0 1
-1 2
-2 0
-0 1
-2 0
-0 1
-1 2
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9269,17 +9092,17 @@ Wall time: 1.52 s
 <tbody>
 <tr>
 <th>RandomPlayer</th>
-<td>5</td>
-<td>1</td>
-<td>3</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>2</td>
 </tr>
 <tr>
 <th>Blocking</th>
-<td>10</td>
-<td>3</td>
+<td>8</td>
+<td>4</td>
 <td>9</td>
 <td>0</td>
 <td>0</td>
@@ -9287,17 +9110,17 @@ Wall time: 1.52 s
 </tr>
 <tr>
 <th>RandomPlayerWinIfCan</th>
-<td>9</td>
-<td>1</td>
+<td>8</td>
+<td>0</td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
-<td>4</td>
+<td>8</td>
 </tr>
 <tr>
 <th>MinimaxPlayer</th>
 <td>10</td>
-<td>9</td>
+<td>10</td>
 <td>10</td>
 <td>0</td>
 <td>0</td>
@@ -9358,30 +9181,30 @@ Wall time: 1.52 s
 <tbody>
 <tr>
 <th>RandomPlayer</th>
-<td>3</td>
+<td>4</td>
+<td>9</td>
+<td>9</td>
+<td>9</td>
 <td>8</td>
-<td>7</td>
 <td>8</td>
-<td>7</td>
-<td>10</td>
 </tr>
 <tr>
 <th>Blocking</th>
 <td>0</td>
-<td>2</td>
+<td>1</td>
 <td>0</td>
 <td>3</td>
-<td>2</td>
+<td>3</td>
 <td>1</td>
 </tr>
 <tr>
 <th>RandomPlayerWinIfCan</th>
 <td>1</td>
-<td>5</td>
-<td>2</td>
-<td>8</td>
 <td>7</td>
-<td>6</td>
+<td>1</td>
+<td>9</td>
+<td>7</td>
+<td>2</td>
 </tr>
 <tr>
 <th>MinimaxPlayer</th>
@@ -9447,35 +9270,35 @@ Wall time: 1.52 s
 <tbody>
 <tr>
 <th>RandomPlayer</th>
-<td>2</td>
-<td>1</td>
 <td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
 <td>2</td>
-<td>3</td>
 <td>0</td>
 </tr>
 <tr>
 <th>Blocking</th>
-<td>0</td>
+<td>2</td>
 <td>5</td>
 <td>1</td>
 <td>7</td>
-<td>8</td>
+<td>7</td>
 <td>0</td>
 </tr>
 <tr>
 <th>RandomPlayerWinIfCan</th>
-<td>0</td>
-<td>4</td>
-<td>0</td>
-<td>2</td>
+<td>1</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
 <td>3</td>
 <td>0</td>
 </tr>
 <tr>
 <th>MinimaxPlayer</th>
 <td>0</td>
-<td>1</td>
+<td>0</td>
 <td>0</td>
 <td>10</td>
 <td>10</td>
@@ -9507,8 +9330,8 @@ Wall time: 1.52 s
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>CPU times: user 2min 56s, sys: 340 ms, total: 2min 57s
-Wall time: 3min
+<pre>CPU times: user 3min 47s, sys: 251 ms, total: 3min 47s
+Wall time: 3min 50s
 </pre>
 </div>
 </div>
