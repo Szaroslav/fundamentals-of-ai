@@ -11,11 +11,11 @@
 ### 3. Problem zimnego startu (cold start).
   Problem zimnego startu polega na podzbiorze użytkowników (najczęściej nowych), o których mało lub w ogóle nic nie wiemy.
   Można sobie z nim radzić na kilka sposobów:
-    - rekomendować najpopularniejsze przedmioty;
-    - rekomendować przedmioty o najwyższych ocenach;
-    - użyć globalnego (niepersonalizowanego) systemu rekomendacyjnego, np. przewidywanie średniej dla przedmiotu;
-    - używać systemu content-based, bo radzą sobie dobrze przy małej liczbie interakcji;
-    - poprosić użytkownika przy pierwszym logowaniu o podanie pierwszych preferencji (nie zawsze możliwe).
+  - rekomendować najpopularniejsze przedmioty;
+  - rekomendować przedmioty o najwyższych ocenach;
+  - użyć globalnego (niepersonalizowanego) systemu rekomendacyjnego, np. przewidywanie średniej dla przedmiotu;
+  - używać systemu content-based, bo radzą sobie dobrze przy małej liczbie interakcji;
+  - poprosić użytkownika przy pierwszym logowaniu o podanie pierwszych preferencji (nie zawsze możliwe).
 
 ### 4. Macierz interakcji, explicit vs implicit feedback.
   Macierz interakcji to macierz, gdzie wierszami są użytkownicy, natomiast kolumnami jakaś metryka interakcji, np. ocena przedmiotu.
