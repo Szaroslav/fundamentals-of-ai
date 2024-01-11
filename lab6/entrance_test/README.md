@@ -21,8 +21,8 @@ Opracowanie do wejściówki
   Algorytm, który minimalizuje on nasze maksymalne straty lub maksymalizuje minimalne zyski.
   **Twierdzenie o minimaksie** mówi o tym, że gracz A może osiągnąć zysk najwyżej P, znając strategię gracza B, gracz B może osiągnąć najwyżej zysk -P, znając strategię gracza A.
 
-### 6. Algorytm alpha beta pruning.
-
+### 6. Algorytm alpha-beta pruning.
+  Optymalizacja algorytmu minimax, polegająca na pomijaniu odgałęzień drzewa, gdy wiemy, że nie da ona lepszego wyniku niż obecny. Zapisuje najlepszy wynik gracza maksymalizującego w zmiennej $\alpha$ i najlepszy gracza minimalizującego w zmiennej $\beta$, gdy $\alpha > \beta$ to ucinamy odnogę.
 
 ### 7. Algorytm monte carlo tree search z wariantem "pure".
 
